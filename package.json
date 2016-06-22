@@ -1,0 +1,15 @@
+{
+  "name": "@f/find-index",
+  "description": "Find the index of an item in an array, given a predicate",
+  "repository": "git://github.com/micro-js/find-index.git",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "postversion": "git push && git push --tags && npm publish --access=public"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
