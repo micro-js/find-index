@@ -17,15 +17,18 @@ Find the index of an item in an array, given a predicate
 ```js
 var findIndex = require('@f/find-index')
 
+findIndex([1, 2, 3], n => n === 3) === 2
 ```
 
 ## API
 
-### findIndex(arg)
+### findIndex(arr, fn, fromIndex)
 
-- `arg` -
+- `arr` - Array to search
+- `fn` - Predicate function that is called on each item. If it returns true, the index of that item is returned from `findIndex`.
+- `fromIndex` - Optional. Defaults to 0. The starting place in the array to search from.
 
-**Returns:**
+**Returns:** The index of the first item that `fn` returns true for. If no such item is found, returns -1.
 
 ## License
 
